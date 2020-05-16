@@ -1,0 +1,25 @@
+selector {
+    property: value;
+    property: value;
+    property: value;
+}
+.idName{
+    color: red
+}
+
+.className {
+    color: greenyellow
+}
+
+/*input : checked {
+    width: 15px;
+    height:15px;
+}*/
+
+div:hover {
+    color: palevioletred;
+}
+
+div:before {
+    /* content: "hello world;*/
+}
