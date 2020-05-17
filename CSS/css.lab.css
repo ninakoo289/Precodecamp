@@ -1,0 +1,110 @@
+body {
+    font-family: Helvetica;
+    margin-bottom: 100px;
+  }
+  
+  h2 {
+    background-color: rgb(218, 93, 93);
+  }
+  
+  /*LAP CSS 4 ANSWERS ตอบคำถามสี่หัวข้อ*/
+  /*toolip part*/
+  a {
+    font-size: 16px;
+    color: #6caf88;
+    text-decoration: none;
+  }
+  
+  .tooltip:hover:after {
+    display: flex;
+    background: #666;
+    color: #fff;
+    content: attr(title);
+    margin: -82px auto;
+    font-size: 16px;
+    padding: 16px;
+    width: 150px;
+  }
+  
+  /*pagination part*/
+  #pagination {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .blocks {
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #666;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+  }
+  .blocks:not(:first-child) {
+    margin-left: 10px;
+  }
+  
+  .blocks:first-child {
+    border-radius: 50%;
+  }
+  
+  .blocks:last-child {
+    border-radius: 50%;
+  }
+  
+  .blocks:hover {
+    background-color: #888;
+  }
+  #pagination a.active {
+    background-color: #6caf88;
+  }
+  
+  /*navigation bar part*/
+  .nav {
+    background: #6caf88;
+    height: 30px;
+  }
+  
+  .nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  .nav li {
+    display: inline-block;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 30px;
+  }
+  
+  .nav li:hover {
+    background: #888;
+    transition: background 0.3s;
+  }
+  
+  .nav-link {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /*dropdown part*/
+  .sub_menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+  }
+  
+  ul.sub_menu {
+    display: none;
+  }
+  
+  ul.sub_menu li {
+    display: block;
+  }
+  
+  .nav ul li:hover ul.sub_menu {
+    display: block;
+  }
+  

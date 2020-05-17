@@ -1,0 +1,217 @@
+
+  /*LAP CSS GRID & FLEX NEWS WEBSITE*/
+  /*หัวข้อนี้ลองใช้ flexbox ในการทำ layout ของ body ส่วนเนื้อข่าว*/
+  
+  /*This is the parent div*/
+  #svt_container {
+    width: 100%;
+    height: 600px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*This is the child for the svt_container. And, 
+  the parent for svt_flexbox_now and svt_flexbox_focus*/
+  .svt_flexbox_left {
+    height: 450px;
+    width: 60%;
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 30px;
+  }
+  
+  /*This is the child div for .svt_flexbox_left*/
+  .svt_flexbox_now {
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  /*This is the child div for .svt_flexbox_left*/
+  .svt_flexbox_focus {
+    height: 340px;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  /*This is the child for the svt_container. And, 
+  the parent for svt_flexbox_daily and svt_flexbox_latest*/
+  .svt_flexbox_right {
+    height: 450px;
+    width: 25%;
+    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /*This is the child div for .svt_flexbox_right*/
+  .svt_flexbox_daily {
+    height: 200px;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  /*This is the child div for .svt_flexbox_right*/
+  .svt_flexbox_latest {
+    height: 200px;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  #img_newswebsite_example {
+    width: 100%;
+    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  #img_newswebsite_example > img {
+    width: 100%;
+  }
+  
+  /*LAP CSS GRID & FLEX E-COMMERCE WEBSITE*/
+  /*หัวข้อนี้ลองใช้ grid ในการทำ layout ของส่วนต่างๆของเวปตั้งแต่ header ไปจนถึงตัวแสดงสินค้าเป็นบล็อคๆ*/
+  
+  /*This is the parent div*/
+  #ellos-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    height: 800px;
+    background-color: #000000;
+    padding: 20px;
+  }
+  
+  /*This is the chids items from 1-12 div*/
+  .ellos_griditem1 {
+    height: 30px;
+    grid-column: 1 / 13;
+    background-color: #fff;
+  }
+  
+  .ellos_griditem2 {
+    height: 60px;
+    grid-column: 1 / 13;
+    background-color: #fff;
+  }
+  
+  .ellos_griditem3 {
+    height: 40px;
+    grid-column: 1 / 13;
+    background-color: #fff;
+  }
+  
+  .ellos_griditem4 {
+    height: 300px;
+    grid-column: 1 / 7;
+    background-color: #fff;
+  }
+  
+  .ellos_griditem5 {
+    height: 300px;
+    grid-column: 7 / 13;
+    background-color: #fff;
+  }
+  
+  .ellos_griditem6 {
+    height: 40px;
+    grid-column: 1 / 13;
+    background-color: #fff;
+  }
+  
+  .ellos_griditem7,
+  .ellos_griditem8,
+  .ellos_griditem9,
+  .ellos_griditem10,
+  .ellos_griditem11,
+  .ellos_griditem12 {
+    height: 150px;
+    grid-column: 1 / 3;
+    background-color: #fff;
+  }
+  
+  .ellos_griditem8 {
+    grid-column: 3 / 5;
+  }
+  
+  .ellos_griditem9 {
+    grid-column: 5 / 7;
+  }
+  
+  .ellos_griditem10 {
+    grid-column: 7 / 9;
+  }
+  
+  .ellos_griditem11 {
+    grid-column: 9 / 11;
+  }
+  
+  .ellos_griditem12 {
+    grid-column: 11 / 13;
+  }
+  
+  /*LAP CSS GRID & FLEX E-LEARNING WEBSITE*/
+  
+  #lynda-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    height: 800px;
+    background-color: #000000;
+    padding: 20px;
+  }
+  
+  .lynda_griditem1 {
+    grid-row: 1 / 5;
+    grid-column: 1 / 8;
+    background-color: #fff;
+  }
+  
+  .lynda_griditem2 {
+    grid-row: 5 / 7;
+    grid-column: 1 / 4;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .lynda_griditem3 {
+    grid-row: 5 / 6;
+    grid-column: 4 / 6;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .lynda_griditem4 {
+    grid-row: 5 / 6;
+    grid-column: 6 / 8;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .lynda_griditem5 {
+    grid-row: 6 / 7;
+    grid-column: 4 / 6;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .lynda_griditem6 {
+    grid-row: 6 / 7;
+    grid-column: 6 / 8;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .lynda_griditem7 {
+    grid-row: 7 / 9;
+    grid-column: 1 / 8;
+    background-color: #fff;
+  }
+  
